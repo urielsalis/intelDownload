@@ -42,7 +42,7 @@ import static me.urielsalis.urielsalads.extensions.download.DownloadMain.*;
 public class Main {
     private static ExtensionAPI api;
 
-    @ExtensionAPI.ExtensionInit("intel-download/1.0.0")
+    @ExtensionAPI.ExtensionInit("intel-download/1.0.1")
     public static void initIntelDownload(ExtensionAPI api) {
         //fill config
         Main.api = api;
@@ -55,11 +55,11 @@ public class Main {
 
     }
 
-    @ExtensionAPI.ExtensionUnload("intel-download/1.0.0")
+    @ExtensionAPI.ExtensionUnload("intel-download/1.0.1")
     public static void unload(ExtensionAPI api) {
         //fill config
         try {
-            api.unRegisterEvent("intel-download/1.0.0/CommandListener");
+            api.unRegisterEvent("intel-download/1.0.1/CommandListener");
         } catch (ExtensionAPI.EventDoesntExistsException e) {
             e.printStackTrace();
         }
@@ -234,7 +234,7 @@ public class Main {
 
         @Override
         public String name() {
-            return "intel-download/1.0.0/CommandListener";
+            return "intel-download/1.0.1/CommandListener";
         }
     }
 }
