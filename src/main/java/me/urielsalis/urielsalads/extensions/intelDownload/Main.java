@@ -38,7 +38,7 @@ import static me.urielsalis.urielsalads.extensions.download.DownloadMain.*;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-@ExtensionAPI.Extension(name="intel-download", version = "1.0.0", dependencies = {"download", "irc"}, id = "intel-download/1.0.0")
+@ExtensionAPI.Extension(name="intel-download", version = "1.0.1", dependencies = {"download", "irc"}, id = "intel-download/1.0.1")
 public class Main {
     private static ExtensionAPI api;
 
